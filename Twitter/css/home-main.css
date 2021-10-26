@@ -1,0 +1,184 @@
+.s2-container {
+    max-width: 600px;
+    width: 50%;
+    height: 100%;
+    border: solid rgb(47, 51, 54);
+    border-width: 0 1px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.home {
+    background-color: #000;
+    padding: 5px 0px;
+    width: 44.3%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(217, 217, 217);
+    border-bottom: solid rgb(47, 51, 54) 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    /* top: 0px; */
+    z-index: 999;
+}
+
+.home > span {
+    cursor: pointer;
+}
+
+.home > i {
+    padding: 5px 5px;
+    cursor: pointer;
+    border: transparent solid 1px;
+    border-radius: 9999px;
+}
+
+.home > i:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.wh {
+    display: flex;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    border-bottom: solid rgb(47, 51, 54) 1px;
+}
+
+.acc-pf {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.acc-pf > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.wh-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wh-area > span {
+    padding: 20px 0;
+    font-weight: 400;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #6E767D;
+}
+
+.tweet-alt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.alt-cont > i {
+    padding: 10px 15px 0 0;
+    font-size: 20px;
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+.tweet-btn {
+    padding: 10px 0;
+}
+
+.tweet-btn > a {
+    background-color: rgb(28, 103, 153);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    border-radius: 9999px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.tweet-btn > a > span {
+    color: rgb(185, 185, 185);
+    font-weight: 700;
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    color: royalblue;
+}
+
+.tweets {
+    display: flex;
+    position: relative;
+    /* top: 40px; */
+    width: 100%;
+    border-bottom: solid rgb(47, 51, 54) 1px;
+    cursor: pointer;
+}
+
+.tweets:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.user-area {
+    font-weight: 700;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(217, 217, 217);
+}
+
+.user-area > span {
+    color: #6E767D;
+}
+
+.tweet-content {
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.tweet-img {
+    width: 470px;
+}
+
+.tweet-img > img {
+    background-attachment: scroll;
+    border-radius: 10%;
+    width: 100%;
+    height: 300px;
+}
+
+.tweet-actions {
+    padding: 5px 0;
+    font-size: 15px;
+    color: rgb(185, 179, 179);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

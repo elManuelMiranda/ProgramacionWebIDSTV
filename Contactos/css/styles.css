@@ -10,8 +10,8 @@ body{
 	background: #212d40;
     margin: auto;
 	display: flex;
-	flex-direction: column;
 	flex-wrap: nowrap;
+	flex-direction: column;
 
 	/*flex-flow: row wrap;*/
 	justify-content: space-around;
@@ -26,8 +26,7 @@ body{
 	background: #fff;
 	/* text-align: center; */
 	align-items: center;
-    border-bottom-style: ridge;
-	border-bottom-color: rgb(255, 255, 255);
+    border-bottom: solid 1px #b6b6b6;
 }
 
 .pp {

@@ -1,0 +1,90 @@
+.s3-container {
+    width: 20%;
+    height: 100vh;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-direction: column;
+    position: relative;
+}
+
+.search {
+    margin: 10px 10px;
+    background-color: rgb(32, 35, 39);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    border-radius: 9999px;
+    width: 25%;
+    height: 30px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+.search > i {
+    padding: 5px 30px 5px 15px;
+    font-size: 20px;
+    color: #6E767D;
+}
+
+.search > span {
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6E767D;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.trending {
+    margin: 10px 10px;
+    background-color: rgb(32, 35, 39);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    border-radius: 9999px;
+    width: 25%;
+    height: 50%;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1298px) {
+    .container > .s1-container {
+        width: 10%;
+    }
+
+    .s1-container > .s1 {
+        width: 88px;
+    }
+
+    nav > a > .opt-container > span {
+        display: none;
+    }
+
+    .options > .tweet-btn-container {
+        display: none;
+    }
+
+    .account-menu-container > .acc-user,
+    .account-menu-container > .acc-dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .s3-container {
+        display: none;
+    }
+}

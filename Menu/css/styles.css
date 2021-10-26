@@ -10,7 +10,7 @@ body{
 	background: #fff;
     margin: auto;
 	display: flex;
-	flex-direction: column-reverse;
+	/* flex-direction: column; */
 	flex-wrap: nowrap;
     flex-flow: column;
 	align-items: center;
@@ -32,7 +32,7 @@ body{
 }
 
 .item:hover {
-    transition-duration: 0.5s;
+    transition-duration: .5s;
     background: rgb(156, 160, 216);
 }
 
@@ -73,8 +73,8 @@ a{
 }
 
 img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 

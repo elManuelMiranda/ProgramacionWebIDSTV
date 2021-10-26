@@ -1,0 +1,303 @@
+@import url(./home-main.css);
+@import url(./home-main-pt2.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.s1-container {
+    width: 20%;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 0 0 100px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-direction: column;
+    position: relative;
+}
+
+.s1 {
+    justify-content: space-between;
+    height: 100%;
+    width: 275px;
+    padding: 0 12px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.options {
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.icon-home {
+    max-width: 10%;
+    padding: 2px 0;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.icon-home > a {
+    background-color: rgba(0, 0, 0, 0);
+    outline-style: none;
+    min-width: 52px;
+    min-height: 52px;
+    cursor: pointer;
+    border: transparent solid 1px;
+    border-radius: 9999px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon-home > a:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.fa-twitter {
+    max-width: 100%;
+    font-size: 25px;
+    line-height: 20px;
+    padding: 15px 10px;
+    /* flex-grow: 1; */
+    align-items: center;
+    vertical-align: text-bottom;
+    position: relative;
+    display: inline-block;
+    color: rgb(217, 217, 217);
+    
+}
+
+.nav-container {
+    margin: 2px 0 4px 0;
+    width: 100%;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.nav-container > nav {
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.nav-container > nav > a {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    width: 100%;
+    /* padding: 4px 0; */
+    display: flex;
+    box-sizing: border-box;
+    flex-basis: auto;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.nav-container > nav > a:hover div {
+    background-color: rgba(217, 217, 217, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.opt-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.opt-container > i {
+    width: 10px;
+    text-align: center;
+    align-items: stretch;
+    color: rgb(217, 217, 217);
+    font-size: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+.opt-container > span {
+    margin: 0 16px 0 20px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-wrap: break-word;
+    color: rgb(217, 217, 217);
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: inline;    
+}
+
+.tweet-btn-container {
+    width: 90%;
+    margin: 16px 0;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.tweet-btn-container > a {
+    background-color: rgb(29, 155, 240);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    min-width: 52px;
+    min-height: 52px;
+    padding: 0 32px;
+    border-radius: 9999px;
+    text-decoration: none;
+    text-align: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.tweet-btn-container > a:hover {
+    background-color: rgb(26, 140, 216);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.tweet-btn-container > a > span {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.account-menu-container {
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    border-radius: 9999px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.account-menu-container:hover {
+    background-color: rgba(217, 217, 217, 0.1);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.account-pfp {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.account-pfp > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.acc-user {
+    padding: 10px 0;
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    color: rgb(217, 217, 217);
+}
+
+.acc-user > span {
+    /* padding: 10px 0; */
+    font-weight: 400;
+    color: rgb(110, 118, 125);
+}
+
+.acc-dots {
+    text-align: center;
+    padding: 22px 0 0 20px;
+    color: rgb(217, 217, 217);
+    font-size: 15px;
+}

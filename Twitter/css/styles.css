@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.s1-container {
+    padding: 16px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.s1 {
+    padding: 20px;
+    width: 100%;
+    min-width: 437px;
+    max-width: 760px;
+    box-sizing: border-box;
+}
+
+.fa-twitter {
+    padding-bottom: 12px;
+    font-size: 3rem;
+    color: rgb(217, 217, 217);
+}
+
+.hn-container {
+    margin: 48px 0;
+    line-height: 84px;
+    letter-spacing: -1.2px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-wrap: break-word;
+    color: rgb(217, 217, 217);
+    box-sizing: border-box;
+    display: inline;
+    white-space: pre-wrap;
+}
+
+
+.jt-container {
+    margin-bottom: 32px;
+    line-height: 36px;
+    font-size: 31px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    color: rgb(217, 217, 217);
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-container,
+.apple-container,
+.phone-email-container {
+    width: 300px;
+    max-width: 380px;
+    height: 40px;
+    margin-bottom: 8px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.google,
+.apple,
+.phone-email {
+    position: relative;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.terms {
+    margin-bottom: 20px;
+    line-height: 16px;
+    font-size: 13px;
+    max-width: 380px;
+    font-weight: 400;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-wrap: break-word;
+    min-width: 0;
+    flex: 1;
+    box-sizing: border-box;
+    display: inline;
+    color: rgb(110, 118, 125);
+}
+
+.terms > a {
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.terms > a:hover {
+    text-decoration: underline;
+}
+
+.sign-toggle {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(217, 217, 217);
+}
+
+.sign-toggle > a {
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.s2-container {
+    background-image: url(../img/lohp_en_1302x955.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(0, 111, 214);
+    width: 52%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.s2 > img {
+    inset: 0px;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.s2 > .fa-twitter {
+    padding: 32px;
+    max-height: 380px;
+    font-size: 20rem;
+    color: rgb(255, 255, 255);
+}
+
+.f-container {
+    padding: 12px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.f-container > a,
+.f-container > div {
+    padding-right: 16px;
+    margin: 4px 0;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+}
+
+.f-container > a > span:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1017px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .s1-container {
+        align-items: center;
+        width: 100%;
+    }
+    .s2-container {
+        width: 100%;
+    }
+    .s2 > .fa-twitter {
+        height: fit-content;
+    }
+}
+
+/* @import url("./media-queries.css") (max-width: 1017px); */
+
+/* @import "media-queries"; */
